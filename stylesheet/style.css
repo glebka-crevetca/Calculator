@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: max-content;
+  overflow-x: hidden;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color:rgb(174, 174, 174);
+  padding: 50px 0 50px 0;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('../fonts/stolzl_book.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Digital';
+    src: url('../fonts/digital_7.ttf') format('truetype');
+    font-weight: 400;
+}
+
+.calculator {
+    width: 600px;
+    height: 710px;
+    border-radius: 30px;
+    border: 10px solid #000000;
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    width: 562px;
+    height: 255px;
+    background-color: #171717; 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.display-decoration {
+    font-family: 'Stolzl', Arial, Sans-Serif;
+    color: #EEEEEE;
+    display: flex;
+    margin-top: 40px;
+}
+.glebi {
+    font-size: 40px;
+}
+.M762 {
+    margin-left: 86px;
+    font-size: 24px;
+    margin-top: auto;
+}
+.digit-7 {
+    font-size: 14px;
+    margin-left: 4px;
+    margin-top: auto;
+}
+.panel {
+    display: flex;
+    margin-left: 28px;
+}
+.panel-panel {
+    width:33px;
+    height: 41px;
+    background-color: #6C4700;
+    border: 1px solid #9A7F44;
+    top: 0;
+}
+
+.display-number {
+    margin-top: 36px;
+}
+.display-input {
+    width: 495px;
+    height: 74px;
+    background-color: #C9CCC9;
+}
+.display-input p {
+    font-size: 80px;
+    color: #29352A;
+    font-family: 'Digital', Arial, Sans-Serif;
+    text-align: end;
+}
+.display-input-decor {
+    width: 495px;
+    height: 12px;
+    background-color: #313131;
+    border-radius: 0 0 5px 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.buttons-1, .buttons-2, .buttons-3 {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons-1 {
+    width: 74px;
+}
+.buttons-1 a {
+    width: 74px;
+}
+.buttons-2 {
+    width: 224px;
+}
+.buttons-3 {
+    width: 143px;
+}
+.btn {
+    width: 60px;
+    height: 54px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Stolzl', Arial, Sans-Serif;
+}
+.gray {
+    background-color: #9A9A9A;
+    font-size: 40px;
+}
+.black {
+    background: #3F3F3F;
+    background: linear-gradient(90deg,rgba(63, 63, 63, 1) 0%, rgba(88, 88, 88, 1) 100%);
+    font-size: 24px;
+}
+.orange {
+    background-color: #FE9C0B;
+}
+.buttons-3 button {
+    font-size: 32px;
+}
+.plus, .ravno {
+    height: 123px; 
+}
