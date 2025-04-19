@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 *,
 *:before,
@@ -150,12 +151,14 @@ body {
     width: 495px;
     height: 74px;
     background-color: #C9CCC9;
+    overflow: hidden;
 }
 .display-input p {
     font-size: 80px;
     color: #29352A;
     font-family: 'Digital', Arial, Sans-Serif;
     text-align: end;
+    margin-right: 10px;
 }
 .display-input-decor {
     width: 495px;
@@ -195,6 +198,14 @@ body {
     align-items: center;
     color: #FFFFFF;
     font-family: 'Stolzl', Arial, Sans-Serif;
+    transition: transform 0.1s ease;
+}
+.btn:hover {
+  filter: brightness(120%);
+}
+.btn:active {
+  filter: brightness(80%);
+  transform: scaleY(0.9) scaleX(0.9);
 }
 .gray {
     background-color: #9A9A9A;
